@@ -1,0 +1,11 @@
+{
+  "name": "@biterra/challenge-wrapper",
+  "version": "1.0.0",
+  "description": "Biterra challenge presence wrapper",
+  "license": "MIT",
+  "type": "module",
+  "exports": { ".": "./src/browser.js" },
+  "files": ["src/browser.js"],
+  "scripts": { "test": "node --test", "build": "go build ./cmd/wrapper" },
+  "publishConfig": { "access": "public" }
+}
