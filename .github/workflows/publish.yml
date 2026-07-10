@@ -28,7 +28,3 @@ jobs:
           file: Dockerfile.python3.11
           push: true
           tags: ghcr.io/biterra-co/challenge-wrapper-python:1.0.0
-      - name: Make container public
-        env:
-          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        run: gh api --method PATCH /orgs/biterra-co/packages/container/challenge-wrapper-python -f visibility=public
